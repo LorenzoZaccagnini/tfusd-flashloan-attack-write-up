@@ -9,6 +9,7 @@
     "hardhat": "^2.4.3"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^3.4.0"
+    "@openzeppelin/contracts": "^3.4.0",
+    "hardhat-ethernal": "^0.7.1"
   }
 }

@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+require('hardhat-ethernal');
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -19,13 +20,13 @@ task("accounts", "Prints the list of accounts", async () => {
 module.exports = {
   solidity: "0.6.12",
   networks: {
-  hardhat: {
-    forking: {
-      url: "https://eth-mainnet.alchemyapi.io/v2/{}",
-      blockNumber: 12517300
-    }
+    hardhat: {
+      forking: {
+        url: "https://eth-mainnet.alchemyapi.io/v2/ZLEN1lDZkjLOggtOsp8PC2JmoOHVbror",
+        blockNumber: 12517300
+      }
+    },
   },
-  }, 
   mocha: {
     timeout: 1200000,
   }
